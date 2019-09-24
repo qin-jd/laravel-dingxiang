@@ -1,0 +1,27 @@
+{
+    "name": "qin-jd/laravel-dingxiang",
+    "description": "laravel-dingxiang is a laravel package for dingxiang captcha",
+    "license": "MulanPSL",
+    "authors": [
+        {
+            "name": "qin-jd",
+            "email": "61671558@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Qinjd\\Dingxiang\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Qinjd\\Dingxiang\\DingxiangServiceProvider"
+            ],
+            "aliases": {
+                "DXCaptcha": "Qinjd\\Dingxiang\\Facades\\Captcha"
+            }
+        }
+    }
+}
